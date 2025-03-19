@@ -1,0 +1,70 @@
+identity:
+  name: elasticsearch
+  author: aias00
+  label:
+    en_US: elasticsearch
+    zh_Hans: elasticsearch
+description:
+  human:
+    en_US: elasticsearch
+    zh_Hans: elasticsearch
+  llm: elasticsearch
+parameters:
+  - name: es_host
+    type: string
+    required: true
+    label:
+      en_US: Elasticsearch host URL (e.g., http://localhost:9200) (required)
+      zh_Hans: Elasticsearch 服务地址
+    human_description:
+      en_US: Elasticsearch host URL (e.g., http://localhost:9200) (required)
+      zh_Hans: Elasticsearch 服务地址
+    llm_description: Elasticsearch host URL  (required)
+    form: form
+  - name: es_username
+    type: string
+    required: false
+    label:
+      en_US: Elasticsearch username 
+      zh_Hans: Elasticsearch 用户名
+    human_description:
+      en_US: Elasticsearch username 
+      zh_Hans: Elasticsearch 用户名
+    llm_description: Elasticsearch username 
+    form: form
+  - name: es_password
+    type: string
+    required: false
+    label:
+      en_US: Elasticsearch password 
+      zh_Hans: Elasticsearch 密码
+    human_description:
+      en_US: Elasticsearch password 
+      zh_Hans: Elasticsearch 密码
+    llm_description: Elasticsearch password (required)
+    form: form
+  - name: index_name
+    type: string
+    required: true
+    label:
+      en_US: Target index name in Elasticsearch (required)
+      zh_Hans: Elasticsearch 索引
+    human_description:
+      en_US: Target index name in Elasticsearch (required)
+      zh_Hans: Elasticsearch 索引
+    llm_description: Target index name in Elasticsearch (required)
+    form: form
+  - name: content
+    type: string
+    required: true
+    label:
+      en_US: Content that needs to be write to es (required)
+      zh_Hans: 写入es的内容
+    human_description:
+      en_US: Content that needs to be write to es (required)
+      zh_Hans: 写入es的内容
+    llm_description: Content that needs to be write to es (required)
+    form: llm
+extra:
+  python:
+    source: tools/elasticsearch.py

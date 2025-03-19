@@ -1,0 +1,42 @@
+version: 0.0.1
+type: plugin
+author: aias00
+name: minio_writer
+label:
+  en_US: minio_writer
+  ja_JP: minio_writer
+  zh_Hans: minio_writer
+  pt_BR: minio_writer
+description:
+  en_US: A tool to write generated content to a MinIO bucket.
+  ja_JP: A tool to write generated content to a MinIO bucket.
+  zh_Hans: A tool to write generated content to a MinIO bucket.
+  pt_BR: A tool to write generated content to a MinIO bucket.
+icon: minio.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/minio_writer.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-15T09:37:03.696892+08:00
+privacy: PRIVACY.md
+verified: false

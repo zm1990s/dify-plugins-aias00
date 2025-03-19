@@ -1,0 +1,16 @@
+identity:
+  author: aias00
+  name: elasticsearch
+  label:
+    en_US: elasticsearch
+    zh_Hans: elasticsearch
+  description:
+    en_US: elasticsearch
+    zh_Hans: elasticsearch
+  icon: elasticsearch.ico
+  
+tools:
+  - tools/elasticsearch.yaml
+extra:
+  python:
+    source: provider/elasticsearch.py
