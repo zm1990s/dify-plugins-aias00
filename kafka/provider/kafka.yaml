@@ -1,0 +1,18 @@
+identity:
+  author: aias00
+  name: kafka
+  label:
+    en_US: kafka
+    zh_Hans: kafka
+    pt_BR: kafka
+  description:
+    en_US: kafka client
+    zh_Hans: kafka client
+    pt_BR: kafka client
+  icon: icon.svg
+tools:
+  - tools/kafka_consumer.yaml
+  - tools/kafka_producer.yaml
+extra:
+  python:
+    source: provider/kafka.py

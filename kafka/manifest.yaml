@@ -1,18 +1,18 @@
 version: 0.0.1
 type: plugin
 author: aias00
-name: minio_reader
+name: kafka
 label:
-  en_US: minio_reader
-  ja_JP: minio_reader
-  zh_Hans: minio_reader
-  pt_BR: minio_reader
+  en_US: kafka
+  ja_JP: kafka
+  zh_Hans: kafka
+  pt_BR: kafka
 description:
-  en_US: A tool to read content from a MinIO bucket.
-  ja_JP: A tool to read content from a MinIO bucket.
-  zh_Hans: A tool to read content from a MinIO bucket.
-  pt_BR: A tool to read content from a MinIO bucket.
-icon: minio.svg
+  en_US: kafka client
+  ja_JP: kafka client
+  zh_Hans: kafka client
+  pt_BR: kafka client
+icon: kafka.png
 resource:
   memory: 268435456
   permission:
@@ -27,7 +27,7 @@ resource:
       size: 1048576
 plugins:
   tools:
-    - provider/minio_reader.yaml
+    - provider/kafka.yaml
 meta:
   version: 0.0.1
   arch:
@@ -37,6 +37,6 @@ meta:
     language: python
     version: "3.12"
     entrypoint: main
-created_at: 2025-03-15T09:37:03.696892+08:00
+created_at: 2025-03-25T18:15:26.612815+08:00
 privacy: PRIVACY.md
 verified: false

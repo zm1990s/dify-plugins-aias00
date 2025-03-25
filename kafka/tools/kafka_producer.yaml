@@ -1,0 +1,56 @@
+identity:
+  name: kafka
+  author: aias00
+  label:
+    en_US: kafka producer
+    zh_Hans: kafka 生产者
+    pt_BR: kafka producer
+description:
+  human:
+    en_US: kafka producer
+    zh_Hans: kafka 生产者
+    pt_BR: kafka producer
+  llm: kafka producer
+parameters:
+  - name: topic
+    type: string
+    required: true
+    label:
+      en_US: Topic
+      zh_Hans: 主题
+      pt_BR: Tópico
+    human_description:
+      en_US: Kafka topic to produce messages to
+      zh_Hans: 要发送消息的Kafka主题
+      pt_BR: Tópico Kafka para produzir mensagens
+    llm_description: The Kafka topic name to produce messages to
+    form: llm
+  - name: message
+    type: string 
+    required: true
+    label:
+      en_US: Message
+      zh_Hans: 消息内容
+      pt_BR: Mensagem
+    human_description:
+      en_US: Message content to send to Kafka
+      zh_Hans: 要发送到Kafka的消息内容
+      pt_BR: Conteúdo da mensagem para enviar ao Kafka
+    llm_description: The message content to produce to the Kafka topic
+    form: llm
+  - name: bootstrap_servers
+    type: string
+    required: true
+    label:
+      en_US: Bootstrap Servers
+      zh_Hans: Kafka服务器地址
+      pt_BR: Servidores Bootstrap
+    human_description:
+      en_US: Kafka bootstrap servers addresses (comma-separated)
+      zh_Hans: Kafka服务器地址列表(逗号分隔)
+      pt_BR: Endereços dos servidores bootstrap Kafka (separados por vírgula)
+    llm_description: List of Kafka bootstrap server addresses in format host1:port1,host2:port2,...
+    form: form
+extra:
+  python:
+    source: tools/kafka_producer.py

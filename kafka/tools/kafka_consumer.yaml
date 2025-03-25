@@ -1,0 +1,70 @@
+identity:
+  name: kafka_consumer
+  author: aias00
+  label:
+    en_US: kafka consumer
+    zh_Hans: kafka 消费者
+    pt_BR: kafka consumer
+description:
+  human:
+    en_US: kafka consumer
+    zh_Hans: kafka 消费者
+    pt_BR: kafka consumer
+  llm: kafka consumer
+parameters:
+  - name: bootstrap_servers
+    type: string
+    required: true
+    label:
+      en_US: Bootstrap Servers
+      zh_Hans: 服务器地址
+      pt_BR: Bootstrap Servers
+    human_description:
+      en_US: Kafka bootstrap servers address
+      zh_Hans: Kafka服务器地址列表
+      pt_BR: Kafka bootstrap servers address
+    llm_description: Kafka bootstrap servers address list (e.g. localhost:9092)
+    form: form
+  - name: topic
+    type: string
+    required: true
+    label:
+      en_US: Topic
+      zh_Hans: 主题
+      pt_BR: Topic
+    human_description:
+      en_US: Kafka topic to consume from
+      zh_Hans: 要消费的Kafka主题
+      pt_BR: Kafka topic to consume from
+    llm_description: The Kafka topic name to consume messages from
+    form: llm
+  - name: group_id
+    type: string
+    required: true
+    label:
+      en_US: Consumer Group ID
+      zh_Hans: 消费者组ID
+      pt_BR: Consumer Group ID
+    human_description:
+      en_US: Kafka consumer group ID
+      zh_Hans: Kafka消费者组ID
+      pt_BR: Kafka consumer group ID
+    llm_description: The consumer group ID for this consumer
+    form: form
+  - name: delimiter
+    type: string
+    required: false
+    default: "\n"
+    label:
+      en_US: Message Delimiter
+      zh_Hans: 消息分隔符
+      pt_BR: Delimitador de Mensagem
+    human_description:
+      en_US: Delimiter used to join multiple messages
+      zh_Hans: 用于连接多条消息的分隔符
+      pt_BR: Delimitador usado para juntar múltiplas mensagens
+    llm_description: The delimiter used to join multiple messages (default is newline)
+    form: form
+extra:
+  python:
+    source: tools/kafka_consumer.py
