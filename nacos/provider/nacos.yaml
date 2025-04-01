@@ -9,7 +9,7 @@ identity:
     en_US: nacos client
     zh_Hans: nacos client
     pt_BR: nacos client
-  icon: icon.svg
+  icon: nacos-logo.png
 tools:
   - tools/nacos_reader.yaml
   - tools/nacos_writer.yaml
