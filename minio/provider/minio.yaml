@@ -9,35 +9,7 @@ identity:
     en_US: Tools for writing content to minio and reading from minio
     zh_Hans: Tools for writing content to minio and reading from minio
     pt_BR: Tools for writing content to minio and reading from minio
-  icon: icon.svg
-# credentials_for_provider:
-#   access_key:
-#     type: text-input
-#     required: true
-#     label:
-#       en_US: Access Key
-#       zh_Hans: AccessKey
-#     placeholder:
-#       en_US: Please input your Access Key
-#       zh_Hans: 请输入您的 AccessKey
-#   secret_key:
-#     type: text-input
-#     required: true
-#     label:
-#       en_US: Secret Key
-#       zh_Hans: SecretKey
-#     placeholder:
-#       en_US: Please input your Secret Key
-#       zh_Hans: 请输入您的 SecretKey
-#   endpoint:
-#     type: text-input
-#     required: true
-#     label:
-#       en_US: endpoint
-#       zh_Hans: endpoint
-#     placeholder:
-#       en_US: Please input your endpoint
-#       zh_Hans: 请输入您的 endpoint
+  icon: minio.svg
 
 tools:
   - tools/minio_reader.yaml

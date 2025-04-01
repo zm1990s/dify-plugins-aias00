@@ -1,7 +1,7 @@
 # Minio Plugin
 
 **Author:** [aias00](https://github.com/aias00)
-**Version:** 0.0.1
+**Version:** 0.0.2
 **Type:** tool
 
 ## Description
