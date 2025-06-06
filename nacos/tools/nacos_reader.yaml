@@ -39,7 +39,7 @@ parameters:
     llm_description: The username for Nacos authentication
     form: form
   - name: password
-    type: string
+    type: secret-input
     required: true
     label:
       en_US: Password
